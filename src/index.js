@@ -12,10 +12,8 @@ const TRACKING_ID = "UA-243737163-2";
 ReactGA.initialize(TRACKING_ID);
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  // <React.StrictMode>
   <Provider store={store}>
     <App />
-    {/* // </React.StrictMode> */}
   </Provider>
 );
 

@@ -51,11 +51,6 @@ const Mission = ({ onClickToast }) => {
         <>
           {!loading && missionChallenge ? (
             <>
-              {/* <div className="mission-event-image">
-                <a href="https://forms.gle/vXFMpi7GF2dFGVPS8">
-                  <EventImage />
-                </a>
-              </div> */}
               <div
                 className="mission-notice-area"
                 onClick={() => navigate("/notice")}

@@ -45,7 +45,7 @@ function App() {
     }
   }, [display]);
   return (
-    <>
+    <reportWebVitals>
       <BrowserRouter>
         <RouteChangeTracker />
         <ScrollToTop />
@@ -119,7 +119,7 @@ function App() {
         </QueryClientProvider>
         {display > 0 ? <Toast text={text} toastNum={toastNum} /> : null}
       </BrowserRouter>
-    </>
+    </reportWebVitals>
   );
 }
 
