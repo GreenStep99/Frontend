@@ -44,14 +44,14 @@ const Modal = ({ onClickToast }) => {
     setLoading(false);
   }, [dispatch]);
   // 이미 가입한 상태로 접근 방지
-  // useEffect(() => {
-  //   instance.get('users/info').then((res) => {
-  //     if (res.data.data.nickname) {
-  //       navigate('/mission');
-  //       onClickToast('이미 가입한 계정입니다.')
-  //     }
-  //   });
-  // }, []);
+  useEffect(() => {
+    instance.get('users/info').then((res) => {
+      if (res.data.data.nickname) {
+        navigate('/mission');
+        onClickToast('이미 가입한 계정입니다.')
+      }
+    });
+  }, []);
   return !loading ? (
     <>
       <ModalBody>
