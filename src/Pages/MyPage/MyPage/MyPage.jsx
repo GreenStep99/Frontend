@@ -64,7 +64,6 @@ const MyPage = ({ onClickToast }) => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const [userInfo, setUserInfo] = useState({});
-  // const userInfo = useSelector((state) => state.userInfo.userInfo);
   const certification = useSelector((state) => state.userInfo.certification);
   const post = useSelector((state) => state.userInfo.post);
   const FirstText = `아직 ${
