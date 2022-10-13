@@ -2,8 +2,6 @@
 import React from 'react';
 //styled import
 import {
-  FirstModalBody,
-  FirstModalSection,
   ModalHeader,
   TopText,
   SelectBody,
