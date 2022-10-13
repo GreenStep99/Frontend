@@ -51,7 +51,7 @@ const Mission = ({ onClickToast }) => {
         <>
           {!loading && missionChallenge ? (
             <>
-              <div
+              {/* <div
                 className="mission-notice-area"
                 onClick={() => navigate("/notice")}
               >
@@ -59,7 +59,7 @@ const Mission = ({ onClickToast }) => {
                   <div className="mission-notice-text">인증샷 데이터 관련</div>
                   <div className="mission-notice-text">긴급 공지 🚨</div>
                 </div>
-              </div>
+              </div> */}
               <DailyChallenge mission={missionChallenge[0]} />
             </>
           ) : (
